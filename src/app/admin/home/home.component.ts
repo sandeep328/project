@@ -9,24 +9,24 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  gdata:any;
-  searchText:any;
-  constructor(private cs:FooditemsService, private dietPlanService: DietPlanService,private matSnackBar: MatSnackBar ){
+  // gdata:any;
+  // searchText:any;
+  // constructor(private cs:FooditemsService, private dietPlanService: DietPlanService,private matSnackBar: MatSnackBar ){
    
-    this.getProducts()
-  }
+  //   this.getProducts()
+  // }
 
-  removeItem(id: any){
-    this.dietPlanService.removeDietPlan(id).subscribe(res =>{
-      this.matSnackBar.open(`product removed from plan`,'Ok',{duration: 3000});
-      this.getProducts()
+  // removeItem(id: any){
+  //   this.dietPlanService.removeDietPlan(id).subscribe(res =>{
+  //     this.matSnackBar.open(`product removed from plan`,'Ok',{duration: 3000});
+  //     this.getProducts()
 
-    });}
+  //   });}
 
-    getProducts(){
-      this.gdata = this.cs.getProducts().subscribe({
-        next: (data:any) => this.gdata = data,
-        error:()=>this.gdata = []
-      })
-    }
-  }
+  //   getProducts(){
+  //     this.gdata = this.cs.getProducts().subscribe({
+  //       next: (data:any) => this.gdata = data,
+  //       error:()=>this.gdata = []
+  //     })
+  //   }
+}

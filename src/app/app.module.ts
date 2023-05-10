@@ -12,6 +12,8 @@ import { UserModule } from './user/user.module';
 import { AdminModule } from './admin/admin.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Head1Component } from './head1/head1.component';
+import { AfilterPipe } from './pipes/afilter.pipe';
+import { SharedModule } from './shared/shared.module';
 
 
 
@@ -20,7 +22,8 @@ import { Head1Component } from './head1/head1.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    Head1Component,
+    // Head1Component,
+    // AfilterPipe,
     
   ],
   imports: [
@@ -30,9 +33,10 @@ import { Head1Component } from './head1/head1.component';
     MaterialModule,
     FormsModule,
     HttpClientModule,
-    UserModule,
-    AdminModule,
-    MatToolbarModule
+    SharedModule
+    // UserModule,
+    // AdminModule,
+    // MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

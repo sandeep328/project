@@ -14,7 +14,7 @@ const routes: Routes = [
   {path:"admin",loadChildren: 
   () => import('./admin/admin.module').then(m => m.AdminModule)},
    {path:":id",component:HouseDetailsComponent},
-  {path:"add-diet-plan",component:DietPlanFormComponent}
+  {path:":id",component:DietPlanFormComponent}
    
  ];
 

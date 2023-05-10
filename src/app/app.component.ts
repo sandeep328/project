@@ -9,41 +9,27 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'task';
-  constructor(private log:LogService,private router:Router){
-
-         
-
+  log: any;
+  constructor(private logService: LogService, private router: Router) {
+    this.log = logService;
+    this.router = router;
   }
 
-
-
-  ngAfterViewInit(){
-
-    if(!this.log.getStatus()){
-
-               
-
-      this.router.navigate(['login'])
-
-   }
-
-   else{
-
-     if(this.log.usertype=="admin")
-
-       this.router.navigate(['admin/home']);
-
-     else
-
-       this.router.navigate(['user/home']);
-
-   }
-
+  ngAfterViewInit() {
+    if (!this.log.getStatus()) {
+      this.router.navigate(['login']);
+    } else {
+      if (this.log.usertype == 'admin') {
+        this.router.navigate(['admin/home']);
+      } else {
+        this.router.navigate(['user/home']);
+      }
+    }
   }
-
-
-
-
-
-
 }
+  
+
+
+
+
+
