@@ -1,0 +1,261 @@
+ #login-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  #login-card.hide {
+    animation-name: slideOut;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  #log-table {
+    width: 100%;
+  }
+  
+  th {
+    text-align: left;
+  }
+  
+  td {
+    padding: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0062cc;
+  }
+  
+  .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+  }
+  
+  .loading img {
+    width: 50px;
+    height: 50px;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .errors {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+  
+  /* #login-card {
+    margin: 20px auto;
+    max-width: 500px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #log-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+  }
+  
+  #log-table th,
+  #log-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  #log-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  #log-table td input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+    font-size: 16px;
+  }
+  
+  #log-table td button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #log-table td button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .errors {
+    color: red;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .loading {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .loading img {
+    width: 50px;
+    height: 50px;
+  }
+  
+   */
+  
+  
+  
+  
+  
+  
+  /* #login-card{
+    height: 500px;
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 30%;
+    background-color: white;
+    box-shadow: 0px 2px 10px lightgray;
+    position: relative;
+    border:2px solid black;   
+}
+
+
+#image-left{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    height: 30%;
+    width:30%;
+}
+
+#image-center{
+    position: absolute;
+    left: 45%;
+    top:0px;
+    height: 35%;
+    width:35%;
+}
+#image-bottom-right{
+    position: absolute;
+    right: 0%;
+    bottom: 0px;
+    height: 25%;
+    width:25%;
+}
+
+#image-bottom-right img, #image-left img, #image-bottom-center img{
+    height: 100%;
+    width: 100%;
+}
+
+#log-table{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+input[type="text"], input[type="password"]{
+    height: 30px;
+    width: 200px;
+}
+
+button{
+    background-color: #2ECC71;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+th,td{
+    height: 50px;
+    width: 250px;
+}
+
+@media only screen and (max-width: 720px) {
+  #login-card{
+     width: 100%;
+     margin: 0px;
+     margin-left: 0px;
+  }
+}
+
+.loading, .errors{
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    left: 25%;
+    color: green;
+} */

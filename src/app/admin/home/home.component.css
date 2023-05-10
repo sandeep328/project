@@ -1,0 +1,57 @@
+/* Center the table */
+.container table {
+    margin: 0 auto;
+  }
+  
+  /* Style the input */
+  .search-food input[type="text"] {
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Style the "Add" button */
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  /* Style the delete button */
+  .btn-danger {
+    background-color: #0db51b;
+    border: none;
+    color: #779671;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+  
+  /* Style the table header */
+  th {
+    background-color: #296eb2;
+    color: #fff;
+  }
+  
+  /* Style the table rows */
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the table cells */
+  td {
+    text-align: center;
+    padding: 8px;
+  }
+  

@@ -1,0 +1,60 @@
+ .menu-bar{
+    background-color: rgb(15, 168, 51) !important;
+    color: rgb(15, 168, 66) ! important;
+    margin: 0rem;
+    text-align: right;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+ul{
+    margin-left: 0rem;
+}
+li {
+    float: left;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+a {
+    color: rgb(10, 154, 65);
+    size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: rgb(11, 166, 45)
+}
+
+a:active {
+    color: rgb(21, 171, 64);
+}
+*{
+    float: left;
+    text-align: right;
+}
+h1 {
+    
+        font-size: 48px;
+        color: #15be09;
+        text-align: center;
+        position: relative;
+        animation: animateTitle 1s ease-in-out;
+      }
+      
+      @keyframes animateTitle {
+        0% {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      

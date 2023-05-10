@@ -1,0 +1,36 @@
+<div class="card-box">
+    <h4 class="card-title mbr-fonts-style display-7">
+        FORMS</h4>
+ 
+ 
+  <h1>COMPLAINTS </h1>
+ 
+
+ <div class="fb">
+
+<textarea name="fb" cols="30" rows="10"
+
+ [(ngModel)]="com" [ngModelOptions]="{standalone: true}"></textarea>
+
+
+ <button (click)="onPost()">submit</button>
+
+</div>
+
+<p *ngFor="let x of forums">{{x.comment}}</p> 
+<!-- <h1>COMPLAINTS</h1>
+
+<div class="fb">
+  <label for="name">Enter Name:</label>
+  <input type="text" id="name" name="name" [(ngModel)]="name">
+
+  <label for="mobile">Enter Mobile Number:</label>
+  <input type="text" id="mobile" name="mobile" [(ngModel)]="mobile">
+
+  <textarea name="fb" cols="30" rows="10" [(ngModel)]="com" [ngModelOptions]="{standalone: true}"></textarea>
+
+  <button (click)="onPost()">Submit</button>
+</div>
+
+<p *ngFor="let x of forums">{{x.comment}}</p> -->
+

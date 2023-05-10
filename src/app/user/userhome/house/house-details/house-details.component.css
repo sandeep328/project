@@ -1,0 +1,22 @@
+ div {
+    background-color: rgb(162, 178, 170);
+    width: 300px;
+    /* border: 15px solid rgb(55, 161, 114);
+    padding: 50px;
+    margin: 150px; */
+    text-align: center;
+    border: 2px solid #ccc;
+    margin: 20px;
+    padding: 10px;
+    transition: transform 0.2s ease;
+    align-items: center;
+    
+
+    
+} 
+.details {
+    transition: transform 0.5s ease;
+}
+.details:hover {
+    transform: scale(1.2);
+}

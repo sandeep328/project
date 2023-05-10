@@ -1,0 +1,84 @@
+
+ <div *ngFor="let item of items"> 
+    <div class="container">
+    <button (click)="showDetails(item)">{{ item.name }}</button>
+    
+
+    
+    
+    
+     <div  *ngIf="selectedItem === item" class="details-box">
+      <!-- <p>Details for {{ item.name }}:</p> -->
+      
+      <h4>Carbs are the body’s main source of energy and should make up half of your daily calorie requirement. However, it’s important to choose the right type of carbs.
+
+        For example, simple carbs, such as bread, biscuit, white rice, and wheat flour, contain too much sugar and are bad for you. Instead, opt for complex carbs that are high in fiber and packed with nutrients as compared to simple carbs.</h4>
+         <img class="g" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwdDCqEKFy6ggpeDi_pKef-2Zs0_C7Hvynkg&usqp=CAU"/>
+         <div *ngIf="selectedItem === item1">
+        <!-- <button (click)="showDetails(item1)">{{ item1.name1}}</button>
+        <h4>For instance, about 30% of your diet should consist of protein in the form of whole pulses (rajma, chole, lobhia green gram), paneer, chana, milk, leafy greens, eggs, white meat, or sprouts. Having one helping of protein with every meal is essential.</h4>
+             -->
+    </div>
+   </div> 
+   
+   <div *ngFor="let item1 of items" > 
+    
+    <button (click)="showDetails1(item1)">Proteins Diet Plan</button>
+
+     <div *ngIf="selectedItem1 === item1" class="details-box">
+        <h4>For instance, about 30% of your diet should consist of protein in the form of whole pulses (rajma, chole, lobhia green gram), paneer, chana, milk, leafy greens, eggs, white meat, or sprouts. Having one helping of protein with every meal is essential.
+            Most Indians fail to meet their daily protein requirement. This is troublesome, as proteins are essential to help the body build and repair tissue, muscles, cartilage, and skin, as well as to pump your blood. Hence, a high protein diet can also help you lose weight, as it helps build muscle – which burns more calories than fat.
+        </h4>
+        <img class="c" src="https://assets.lybrate.com/q_auto:eco,f_auto,w_850/imgs/product/kwds/diet-chart/High-Protein-Diet-Chart-v1.jpg"/>
+        
+  </div>
+  </div>
+  <div *ngFor="let item2 of items" > 
+    <button (click)="showDetails2(item2)">Fats Diet Plan</button>
+    
+     <div *ngIf="selectedItem2 === item2" class="details-box">
+        <h4>Fats, a food group with a negative reputation, is necessary for the body because they produce hormones, store vitamins, and offer energy.
+           Experts suggest one-fifth or 20% of your diet must consist of healthy fats – polyunsaturated, monounsaturated, and Omega-3 fatty acids. Hence, as per research having a healthy approach to your fat diet plan will be beneficial.
+        </h4>
+        <img class="c" src="https://www.healthkart.com/connect/wp-content/uploads/2020/09/fat%20loss%20diet.jpg"/>
+        
+  </div>
+  </div>
+ <div *ngFor="let item3 of items" > 
+    <button (click)="showDetails3(item3)">Vitamins and Minerals Diet Plan</button>
+    
+     <div *ngIf="selectedItem3 === item3" class="details-box">
+        <h4>
+            Vitamin A, Vitamin E, Vitamin B12, Vitamin D, calcium and iron are essential for the body as they support metabolism, nerve and muscle function, bone maintenance, and cell production.
+            
+            Since, these are primarily derived from plants, meat and fish, minerals can also be found in nuts, oilseeds, fruits and green leafy vegetables.
+        </h4>
+        <img class="c" src="https://st3.depositphotos.com/1000589/36676/i/1600/depositphotos_366761196-stock-photo-balanced-diet-food-background-nutrition.jpg"/>
+ </div>
+ <div *ngFor="let item4 of items" > 
+    <button (click)="showDetails4(item4)">Plant-based and flexitarian diets</button>
+    
+     <div *ngIf="selectedItem4 === item4" >
+        <h4>The Flexitarian Diet is a style of eating that encourages eating mostly plant-based foods while allowing meat and other animal products in moderation. It's more flexible than fully vegetarian or vegan diets
+            Vegetarians eliminate meat and sometimes other animal foods, while vegans avoid meat, fish, eggs, dairy, and all other animal-derived food products.
+
+            Because flexitarians eat animal products, they’re not considered vegetarians or vegans.
+            
+            The Flexitarian Diet has no clear-cut rules or recommended numbers of calories and macronutrients. In fact, it’s more of a lifestyle than a diet.</h4>
+        <img class="c" src="https://c.ndtvimg.com/2018-11/tfjttoe8_flexitarian-diet_625x300_27_November_18.jpg"/>
+        
+  </div>
+  <div *ngFor="let item5 of items" > 
+    <button (click)="showDetails5(item5)">The MIND diet</button>
+    
+     <div *ngIf="selectedItem5 === item5" class="details-box">
+        <h4>The MIND diet stands for the Mediterranean-DASH Intervention for Neurodegenerative Delay. The MIND diet aims to reduce dementia and the decline in brain health that often occurs as people age. It combines aspects of two well-researched diets, the Mediterranean Diet and Dietary Approaches to Stop Hypertension (DASH).
+        </h4>
+        <img class="c" src="https://www.pacificneuroscienceinstitute.org/wp-content/uploads/Mind_Diet_Food_Options.jpg"/>
+        
+  </div>
+   
+  
+  
+  
+ 
