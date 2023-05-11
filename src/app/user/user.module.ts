@@ -18,6 +18,8 @@ import { FilterPipe } from '../pipes/filter.pipe';
 import { FilterpricePipe } from '../pipes/price.pipe';
 import { DietplanComponent } from './userhome/dietplan/dietplan.component';
 import { FormsComponent } from './userhome/forms/forms.component';
+import { FeedbackboxComponent } from './userhome/forms/feedbackbox/feedbackbox.component';
+import { FeedbackformComponent } from './userhome/forms/feedbackform/feedbackform.component';
 
 const route:Routes=[
 
@@ -64,7 +66,10 @@ const route:Routes=[
     FilterPipe,
     FilterpricePipe,
     DietplanComponent,
-    FormsComponent
+    FormsComponent,
+    FeedbackboxComponent,
+    FeedbackformComponent,
+    
     
   ],
   imports: [

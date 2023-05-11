@@ -25,9 +25,9 @@
   }
   
   .good {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+    background-position: center;
+    background-size: cover;
+    min-height: 75%;
   }
   /* .container {
     position: relative;
@@ -115,7 +115,7 @@ h1 {
     position: inherit;
     padding-top: 50px;
 } */
-.good {
+/* .good {
     animation: scale-in 1s;
   }
   
@@ -127,6 +127,6 @@ h1 {
       transform: scale(1);
     }
   }
-  
+   */
   
   

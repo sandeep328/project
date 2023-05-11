@@ -6,6 +6,7 @@ import { DetailsBoxComponent } from './user/userhome/details/details-box/details
 import { HouseBoxComponent } from './user/userhome/house/house-box/house-box.component';
 import { Head1Component } from './head1/head1.component';
 import { DietPlanFormComponent } from './admin/diet-plan-form/diet-plan-form.component';
+import { FeedbackformComponent } from './user/userhome/forms/feedbackform/feedbackform.component';
 
 const routes: Routes = [
   {path:"login",component:LoginComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path:"admin",loadChildren: 
   () => import('./admin/admin.module').then(m => m.AdminModule)},
    {path:":id",component:HouseDetailsComponent},
-  {path:":id",component:DietPlanFormComponent}
+  {path:":id",component:DietPlanFormComponent},
+  {path:"forum/:id",component:FeedbackformComponent}
    
  ];
 

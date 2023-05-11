@@ -1,11 +1,51 @@
-<div class="card-box">
+
+
+
+
+
+<div class="container">
+
+  <h2>Post feedback/Queries</h2>
+
+  <div class="feedback-section">
+
+    <mat-form-field appearance="fill" class="input-field">
+
+      <mat-label>Input</mat-label>
+
+      <input matInput [(ngModel)]="query" class="input-box">
+
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" class="b1" (click)="AddQuestion()">Post</button>
+
+    <app-feedbackbox *ngFor="let x of forumlist" [q]="x" class="feedback-box"></app-feedbackbox>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    <!-- <div class="card-box">
     <h4 class="card-title mbr-fonts-style display-7">
         FORMS</h4>
  
  
   <h1>COMPLAINTS </h1>
  
+  <label for="name">Enter Name:</label>
+  <input type="text" id="name" name="name" [(ngModel)]="name">
 
+  <label for="mobile">Enter Mobile Number:</label>
+  <input type="text" id="mobile" name="mobile" [(ngModel)]="mobile">
  <div class="fb">
 
 <textarea name="fb" cols="30" rows="10"
@@ -17,7 +57,7 @@
 
 </div>
 
-<p *ngFor="let x of forums">{{x.comment}}</p> 
+<p *ngFor="let x of forums">{{x.comment}}</p>  -->
 <!-- <h1>COMPLAINTS</h1>
 
 <div class="fb">
